@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
       # TODO: Does this session method work with private browsing?
       session[:user_id] = user.id
       redirect_to '/'
+      flash[:notice] = "Successfully logged in."
     else
       # If the user's login fails
       redirect_to '/login'
