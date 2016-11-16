@@ -10,6 +10,7 @@
 
   <body>
     <% if current_user %>
+      <%= link_to "Home", "/", :class => "" %>
       <%= link_to "Profile Page", current_user, :class => "" %>
       <%= link_to "Log Out", "/logout", :class => "" %>
     <% else %>
